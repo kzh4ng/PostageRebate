@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title><%= full_title(yield(:title)) %></title>
+	<%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+	<%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+	<%= csrf_meta_tags %>
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="main.css" rel="stylesheet">
+	<link href="fonts/glyphicons-halflings-regular.svg" rel='stylsheet'>
+	<link href='https://fonts.googleapis.com/css?family=Crete+Round' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Droid+Serif' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Roboto:400,900' rel='stylesheet' type='text/css'>
+	<%= render 'layouts/shim' %>
+</head>
+<body>
+	<%= render 'layouts/header' %>
+	
+	<%= yield %>
+	<%= render 'layouts/footer' %>
+	<%= debug(params) if Rails.env.development? %>
+	
+	<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+</body>
+</html>
+

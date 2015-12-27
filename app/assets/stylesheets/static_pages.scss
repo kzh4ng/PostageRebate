@@ -1,0 +1,127 @@
+// Place all the styles related to the static_pages controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+/*Source code by Solomon Astley
+CSS styling for the home page of postagerebate site*/
+
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+	background-color: #0193B7;  /*Sets the text hover color on navbar*/
+	font-family: 'Droid Serif', serif;
+	font-size: 16px;
+}
+
+.navbar-default {
+    background-color: #152D51;
+    border-color: #152D51;
+    border-radius: 0px;
+}
+
+.nav > li > a:hover,
+.nav > li > a:focus {
+    text-decoration: none;
+    background-color: #152D51; /*Change rollover cell color here*/
+ }
+
+
+.navbar-default .navbar-nav > li > a {
+ 	color: #FFDDA2; /*Change active text color here*/
+ 	font-family: 'Droid Serif', serif;
+ 	font-size: 16px;
+ }
+
+.navbar-default .navbar-header > a,
+.navbar-default .navbar-header > a:hover {
+	color: #FFDDA2;
+	/*font-family: 'Bree Serif', serif;*/
+	font-family: 'Crete Round', serif;
+	font-size: 30px;
+}
+
+body {
+	background: #152D51 !important;
+}
+
+#bg-fade-carousel {
+	background-color: white !important;
+}
+
+.slide1, .slide2, .slide3 {
+    height: 85vh;
+    background-size: cover;
+    background-position: center center;
+}
+.slide1 {
+    background-image: url(http://www.theswedishtiger.com/1066.jpg);
+    opacity: 0.2;
+}
+.slide2 {
+    background-image: url(http://www.theswedishtiger.com/1017.jpg);
+    opacity: 0.2;
+}
+.slide3 {
+    background-image: url(http://www.theswedishtiger.com/1070.jpg);
+    opacity: 0.2;
+}
+
+.carousel-overlay {
+    position: absolute;
+    bottom: 100px;
+    right: 0;
+    left: 0;
+}
+
+.carousel .carousel-overlay > h1 {
+	color: #152D51;
+	font-family: 'Roboto', sans-serif;
+	font-size: 50px;
+	/*-webkit-text-stroke: 1px #FFDDA2;*/
+}
+
+.carousel .carousel-overlay .btn {
+	background-color: #152D51 !important;
+	border-color: #152D51 !important;
+}
+
+.carousel .carousel-overlay .btn:hover {
+	background-color: #FFDDA2;
+	opacity: 0.85;
+}
+
+.carousel .carousel-overlay > p {
+	color: #331A00;
+	font-family: 'Droid Serif', serif;
+}
+
+.the-bottom {
+	background-color: #152D51 !important;
+	color: #FFDDA2;
+	font-family: 'Droid Serif', serif;
+	border-color: #152D51;
+}
+
+.the-bottom .pull-right {
+	text-align: right;
+}
+
+.the-bottom h3, .the-bottom p {
+	font-size: 15px;
+	padding-left: 5em;
+}
+
+span.glyphicon-envelope {
+	font-size: 2.5em;
+	color: #FFDDA2;
+}
+
+span.glyphicon-envelope:hover {
+	opacity: 0.85;
+}
+
+.row-bottom-margin p {
+	margin: 0;
+	padding-top: 5px;
+}
